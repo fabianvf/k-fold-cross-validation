@@ -81,7 +81,7 @@ def partition(dataSet, k):
     j = 0
     
     for entry in dataSet:
-        x = assign(partitions, k) #TODO: Not sure this assignation method is good
+        x = assign(partitions, k, size) #TODO: Not sure this assignation method is good
         partitions[x].append(entry)
 
     for partition in partitions:
@@ -89,12 +89,11 @@ def partition(dataSet, k):
     return partitions
 
 # Assigns each entry to a non-full partition
-def assign(partitions, k):
+def assign(partitions, k, size):
     x = randint(0,k-1)
-    if len(partitions[x]) < 27:
-        return x
-    else:
-        return assign(partitions, k)
+    while(len(partitions[x]) >= size):
+        x = randint(0,k-1)
+    return x
 
 
 # Gets number of characters in length of title for each entry in the dataset
