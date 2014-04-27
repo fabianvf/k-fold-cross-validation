@@ -1,3 +1,4 @@
+from random import randint
 #------------------------------------------------------------------------
 # main.py
 # 
@@ -74,7 +75,27 @@ def learnAndClassify(algorithm, trainingSet, testSet):
  
 # Divides data set into k partitions
 def partition(dataSet, k):
-    return False #TODO
+    size = len(dataSet)//k
+    print(size)
+    partitions = [[] for i in range(k)]
+    j = 0
+    
+    for entry in dataSet:
+        x = assign(partitions, k) #TODO: Not sure this assignation method is good
+        partitions[x].append(entry)
+
+    for partition in partitions:
+        print len(partition)
+    return partitions
+
+# Assigns each entry to a non-full partition
+def assign(partitions, k):
+    x = randint(0,k-1)
+    if len(partitions[x]) < 27:
+        return x
+    else:
+        return assign(partitions, k)
+
 
 # Gets number of characters in length of title for each entry in the dataset
 def getTitleLengths(dataSet):
