@@ -1,0 +1,271 @@
+N=270	H=[categoryLabel, bookID, bookTitle, bookAuthor]
+AMERICAN HISTORY	b15857527	These United States	Unger, Irwin
+AMERICAN HISTORY	b10957081	Cengage Advantage Books: American Passages	Ayers, Edward L.; Gould, Lewis L.; Oshinsky, David M.; Soderlund, Jean R.
+AMERICAN HISTORY	b15131495	Voices of a People's History of the United States	Zinn, Howard; Arnove, Anthony
+AMERICAN HISTORY	b15683513	American Realities	Youngs, J. William T.
+AMERICAN HISTORY	b9418230	American History: A Survey, Volume 1	Brinkley, Alan
+AMERICAN HISTORY	b14348885	Liberty, Equality, Power	Murrin, John M.; Johnson, Paul E.; McPherson, James M.; Gerstle, Gary; Fahs, Alice
+AMERICAN HISTORY	b9372860	American History: A Survey, Volume 2	Brinkley, Alan
+AMERICAN HISTORY	b9489206	Religion in America	Hemeyer, Julia Corbett
+AMERICAN HISTORY	b15750025	America	Tindall, George Brown; Shi, David E.
+AMERICAN HISTORY	b11398628	The Unfinished Nation: A Concise History of the American People, Volume 1	Brinkley, Alan
+AMERICAN HISTORY	b10958935	The American Spirit	Kennedy, David M.; Bailey, Thomas
+AMERICAN HISTORY	b3145440	Visions of America	Keene, Jennifer D.; Cornell, Saul T; O'Donnell, Edward T.
+AMERICAN HISTORY	b10483479	A Documentary History of the United States	Heffner, Richard C.; Heffner, Alexander; Heffner, Richard D.
+AMERICAN HISTORY	b10350403	Ordeal by Fire	McPherson, James M.; Hogue, James K.
+AMERICAN HISTORY	b14257895	Patriots, Loyalists, and Revolution in New York City, 1775-1776	Offutt, William
+AMERICAN HISTORY	b478619	Out of Many, Volume 1	Faragher, John Mack; Buhle, Mari Jo; Czitrom, Daniel H.; Armitage, Susan H.
+AMERICAN HISTORY	b15140909	The Ethnic Dimension in American History	Olson, James S.; Olson Beal, Heather
+AMERICAN HISTORY	b9510585	Through Women's Eyes, Combined Version (Volumes 1 & 2)	DuBois, Ellen Carol; Dumenil, Lynn
+AMERICAN HISTORY	b11281696	Cengage Advantage Books: American Pageant, Volume 2: Since 1865	Kennedy, David; Cohen, Lizabeth
+BIOLOGY	b15018203	Lewin's GENES X	Krebs, Jocelyn E.; Goldstein, Elliott S.; Kilpatrick, Stephen T.
+BIOLOGY	b9879263	Human Biology	Mader, Sylvia
+BIOLOGY	b9704885	Human Physiology	Silverthorn, Dee Unglaub
+BIOLOGY	b10543980	Anatomy and Physiology	Saladin, Kenneth S.
+BIOLOGY	b13043	Introduction to Genetic Analysis	Griffiths, Anthony J.F.; Wessler, Susan R.; Lewontin, Richard C.; Carroll, Sean B.
+BIOLOGY	b9641203	Foundations in Microbiology	Talaro, Kathleen Park
+BIOLOGY	b55992	Biology	Krogh
+BIOLOGY	b14901837	Taking Sides: Clashing Views in Life-Span Development	Guest, Andrew
+BIOLOGY	b6157	Molecular Cell Biology	Lodish, Harvey; Berk, Arnold; Kaiser, Chris A.; Krieger, Monty; Scott, Matthew P.; Bretscher, Anthony; Ploegh, Hidde; Matsudaira, Paul
+BIOLOGY	b9606827	Human Physiology	Sherwood, Lauralee
+BIOLOGY	b15450407	Biology	Audesirk, Gerald; Audesirk, Teresa; Byers, Bruce E.
+BIOLOGY	b10485168	Junqueira's Basic Histology: Text and Atlas, 12th Edition	Mescher, Anthony
+BIOLOGY	b16957065	Developmental Biology	Gilbert, Scott F.
+BIOLOGY	b16723261	Alcamo's Fundamentals Of Microbiology	Pommerville, Jeffrey C.
+BIOLOGY	b18630	Molecular Biology of the Cell	Alberts, Bruce; Johnson, Alexander; Lewis, Julian; Raff, Martin; Roberts, Keith; Walter, Peter
+BIOLOGY	b14776897	Seeley's Anatomy &amp; Physiology	VanPutte, Cinnamon; Regan, Jennifer; Russo, Andrew
+BIOLOGY	b10353	Evolutionary Analysis	Freeman, Scott; Herron, Jon C.
+BIOLOGY	b218309	Essential Cell Biology	Alberts, Bruce; Bray, Dennis; Hopkin, Karen; Johnson, Alexander; Lewis, Julian; Raff, Martin; Roberts, Keith; Walter, Peter; Walter, Peter
+BIOLOGY	b11361508	Inquiry into Life	Mader, Sylvia
+BIOLOGY	b108792	Benson's Microbiological Applications: Laboratory Manual in General Microbiology, Short Version	Brown, Alfred
+BIOLOGY	b329105	Concepts of Genetics	Klug, William S.; Cummings, Michael R.; Spencer, Charlotte A.; Palladino, Michael A.
+BIOLOGY	b39675	Biology	Campbell, Neil A.; Reece, Jane B.; Taylor, Martha R.; Simon, Eric J.; Dickey, Jean L.
+COMPUTER SCIENCE	b16398579	Ethical and Social Issues in the Information Age	Kizza, Joseph Migga
+COMPUTER SCIENCE	b9888581	Integrating Computer Technology into the Classroom	Morrison, Gary R.; Lowther, Deborah L.
+COMPUTER SCIENCE	b15461721	Understanding Computers in a Changing Society	Morley, Deborah
+COMPUTER SCIENCE	b14718631	A+ Guide to Software	Andrews, Jean
+COMPUTER SCIENCE	b15540715	Fluency with Information Technology	Snyder, Lawrence
+COMPUTER SCIENCE	b11437085	Introduction to MATLAB for Engineers	Palm III, William
+COMPUTER SCIENCE	b11320342	C	Deitel, Paul; Deitel, Harvey M.
+COMPUTER SCIENCE	b14768687	JavaScript	Gosselin, Don
+COMPUTER SCIENCE	b9877475	A Concise Introduction to Logic (with iLrnâˆšÂ¢â€šÃ„Ã»Â¬Â¢ Printed Access Card)	Hurley, Patrick J.
+COMPUTER SCIENCE	b2731841	Introduction to Programming with Greenfoot	KâˆšÃ‰Â¬âˆ‚lling, Michael
+COMPUTER SCIENCE	b14952215	PHP Programming with MySQL	Gosselin, Don; Kokoska, Diana; Easterbrooks, Robert
+COMPUTER SCIENCE	b9752743	Graphic Communications	Prust, Z. A.
+COMPUTER SCIENCE	b14733483	Programming Logic and Design, Comprehensive	Farrell, Joyce
+COMPUTER SCIENCE	b10418485	Data Structures Using C++	Malik, D. S.
+COMPUTER SCIENCE	b14713033	HTML and JavaScript BASICS	Barksdale, Karl; Turner, E. Shane
+COMPUTER SCIENCE	b10433562	Starting Out with Programming Logic and Design	Gaddis, Tony
+COMPUTER SCIENCE	b16323933	Programming in Visual Basic 2010	McKeown, Jim
+COMPUTER SCIENCE	b9950386	Object-Oriented Software Engineering Using UML, Patterns, and Java	Bruegge, Bernd; Dutoit, Allen H.
+CRIMINOLOGY	b11466559	America's Courts and the Criminal Justice System	Neubauer, David W.; Fradella, Henry F.
+CRIMINOLOGY	b28901675	The Police in America: An Introduction	Walker, Samuel; Katz, Charles M
+CRIMINOLOGY	b10955812	Juvenile Justice	Lawrence, Richard A.; Hesse, Mario L.
+CRIMINOLOGY	b9699191	Criminal Investigation	Gilbert, James N.
+CRIMINOLOGY	b9881352	Biosocial Criminology	Beaver, Kevin
+CRIMINOLOGY	b14769737	Critical Issues in Crime and Justice	Maguire, Mary; Okada, Daniel (Dan) W. (William)
+CRIMINOLOGY	b19242237	Criminal Procedure	Anderson; Dressler, Joshua; Thomas, George C.
+CRIMINOLOGY	b14954071	Contemporary Criminal Law	Lippman, Matthew R.
+CRIMINOLOGY	b18579787	Criminology	Brown, Stephen; Esbensen, Finn-Aage; Geis, Gilbert
+CRIMINOLOGY	b11248011	Essentials of Criminal Justice	Siegel, Larry J.
+CRIMINOLOGY	b163585	Criminology Today	Schmalleger, Frank J.
+CRIMINOLOGY	b9401883	Essential Criminology	Lanier, Mark M.; Henry, Stuart
+CRIMINOLOGY	b9393982	Criminal Investigation	Swanson, Charles; Chamelin, Neil; Territo, Leonard; Taylor, Robert
+CRIMINOLOGY	b15140655	Digital Crime, Digital Terrorism	Taylor, Robert W.; Fritsch, Eric J.; Liederbach, John R; Holt, Thomas J.
+CRIMINOLOGY	b12701475	Administration and Management in Criminal Justice	Allen (Easley), Jennifer M.; Sawhney, Rajeev
+CRIMINOLOGY	b9673682	Criminal Investigation	Hess, KâˆšÃ‰Â¬Â§ren M.; Hess Orthmann, Christine
+CRIMINOLOGY	b28900825	Criminology	Adler, Freda; Laufer, William S; Mueller, Gerhard O. W
+CRIMINOLOGY	b9900790	Trusted Criminals	Friedrichs, David O.
+CRIMINOLOGY	b15140665	Criminalistics	Saferstein, Richard
+CRIMINOLOGY	b9666735	Serial Murderers and their Victims	Hickey, Eric W.
+CRIMINOLOGY	b1623	The Color of Justice	Walker, Samuel; Spohn, Cassia; DeLone, Miriam
+CRIMINOLOGY	b14507173	Professionalism in Policing: An Introduction	Thomas, David J.
+CRIMINOLOGY	b15689533	Essentials of Terrorism	Martin, Gus
+CRIMINOLOGY	b32108	Criminal Justice Organizations	Stojkovic, Stan; Kalinich, David; Klofas, John
+CRIMINOLOGY	b15224217	Debating Terrorism and Counterterrorism	Gottlieb, Stuart
+CRIMINOLOGY	b15683541	Terrorism in the Twenty-First Century	Combs, Cynthia C.
+CRIMINOLOGY	b17295309	Restoring Justice	Van Ness, Daniel; Strong, Karen
+CRIMINOLOGY	b15832879	Hate Crimes	Gerstenfeld, Phyllis B.
+ENGLISH	b15012253	Language Assessment	Brown, H. Douglas; Abeywickrama, Priyanvada
+ENGLISH	b9575085	Sentence-Combining Workbook	Altman, Pam; Caro, Mari; Metge-Egan, Lisa; Roberts, Leslie
+ENGLISH	b15683455	Communication	Dunn, Daniel M.; Goodnight, Lisa J.
+ENGLISH	b14855911	How to Study in College	Pauk, Walter; Owens, Ross J.Q.
+ENGLISH	b11431811	The Writer's Harbrace Handbook, Brief Edition	Glenn, Cheryl; Gray, Loretta
+ENGLISH	b125902	The Compact Bedford Introduction to Literature	Meyer, Michael
+ENGLISH	b15140651	One Hundred Great Essays (Penguin Academics Series)	DiYanni, Robert J.
+ENGLISH	b10872419	The Longman Anthology of British Literature, Volume 2C	Damrosch, David; Dettmar, Kevin J. H.
+ENGLISH	b10870054	The Longman Anthology of British Literature, Volume 2B	Damrosch, David; Dettmar, Kevin J. H.; Henderson, Heather; Sharpe, William Chapman
+ENGLISH	b15140643	Reading Rhetorically	Bean, John C.; Chappell, Virginia A.; Gillam, Alice M.
+ENGLISH	b14336615	Mindscapes	Carter, Christine E.
+ENGLISH	b38184	Perrine's Literature	Arp, Thomas R.; Johnson, Greg
+ENGLISH	b15882235	The Prentice Hall Essential Guide for College Writers	Reid, Stephen P.
+ENGLISH	b11081082	Writing about Literature with 2009 MLA Update	Gardner, Janet E.
+ENGLISH	b3061543	Real Communication	O'Hair, Dan; Wiemann, Mary
+ENGLISH	b1738	Literature	Diyanni, Robert
+ENGLISH	b9649940	Analyzing Short Stories	Lostracco, Joseph; Wilkerson, George J.
+ENGLISH	b15683487	The Prentice Hall Guide for College Writers, Brief	Reid, Stephen P.
+ENGLISH	b15138455	Fifty Great Essays (Penguin Academic Series)	DiYanni, Robert J.
+ENGLISH	b15136909	Strategies for Business and Technical Writing	Harty, Kevin J.
+ENGLISH	b10485019	Navigating America	Moton, David; Dumler, Gloria
+ENGLISH	b16311755	Writing with Style	Szuchman, Lenore T.; Thomlison, Barbara
+ENGLISH	b10466917	Team Writing	Wolfe, Joanna
+ENGLISH	b9650703	Patterns for College Writing	Kirszner, Laurie G.; Mandell, Stephen R.
+ENGLISH	b11429126	Opening Doors	Cortina, Joe; Elder, Janet
+ENGLISH	b33020	Communicating in Small Groups	Beebe, Steven A.; Masterson, John T.
+ENGLISH	b15139029	Writing for Life	Henry, D. J.
+ENGLISH	b16008935	Across Cultures	Gillespie, Sheena; Becker, Robert
+ENGLISH	b14336451	Sentences, Paragraphs, and Beyond	Brandon, Lee; Brandon, Kelly
+ENGLISH	b9704572	Creating Literacy Instruction for All Students	Gunning, Thomas G.
+ENGLISH	b14348879	Evergreen	Fawcett, Susan
+ENGLISH	b15705689	The Norton Sampler	Cooley, Thomas
+ENGLISH	b47160	Literature: Approaches to Fiction, Poetry, and Drama	DiYanni, Robert
+ENGLISH	b15426771	Public Speaking for College and Career with Connect Plus Public Speaking	Gregory, Hamilton
+ENGLISH	b15131115	English Grammar for Students of German, 5th Edition	Zorach, Cecile; Melin, Charlotte; Kautz, Elizabeth A.; Morton, Jacqueline
+ENGLISH	b15140143	Report It in Writing	Goodman, Debbie J.
+ENGLISH	b15136919	Four In One	Dornan, Ed; Dees, Robert
+ENGLISH	b2106910	The Writer's Selections	McWhorter, Kathleen T.
+ENGLISH	b14538717	Pocket Guide to Technical Communication	Pfeiffer, William S.
+ENGLISH	b9648287	English 101	Taylor, Marcia; Brockman, Elizabeth; Kreth, Melinda
+ENGLISH	b9877699	Literature	Kennedy, X. J.; Gioia, Dana
+ENGLISH	b15541393	Odyssey	Kelly, William J.; Lawton, Deborah L.
+ENGLISH	b16355573	Scientific Writing and Communication	Hofmann, Angelika H.
+ENGLISH	b16405687	A Handbook of Critical Approaches to Literature	Guerin, Wilfred; Labor, Earle; Morgan, Lee; Reesman, Jeanne; Willingham, John
+ENGLISH	b14505699	The Least You Should Know About English	Wilson, Paige; Glazier, Teresa Ferster
+ENGLISH	b15140145	Efficient and Flexible Reading	McWhorter, Kathleen T.
+ENGLISH	b9829632	Ready for Revised RICA	Zarrillo, James J.
+ENGLISH	b11198158	Readings In Rhetorical Criticism	Burgchardt, Carl R.
+ENGLISH	b9712962	A Writer's Resource	Maimon, Elaine; Peritz, Janice; Yancey, Kathleen
+ENGLISH	b10881248	Wordsmith	Arlov, Pamela
+ENGLISH	b11081594	Strategies for Successful Writing	Reinking, James A.; von der Osten, Robert
+ENGLISH	b10157906	Writing in the Works	Blau, Susan; Burak, Kathryn
+ENGLISH	b11084662	Rules for Writers with 2009 MLA Update	Hacker, Diana
+ENGLISH	b12727423	Study Guide for Contemporary Linguistics	O'Grady, William; Archibald, John; Aronoff, Mark; Rees-Miller, Janie
+ENGLISH	b11163755	Occasions for Writing (with 2009 MLA Update Card)	DiYanni, Robert; Hoy, II, Pat C.
+MANAGEMENT	b9356214	Management	Kinicki, Angelo; Williams, Brian
+MANAGEMENT	b11189730	Managing Transitions	Bridges, William; Bridges, Susan
+MANAGEMENT	b9877345	Effective Training	Blanchard, P. Nick; Thacker, James
+MANAGEMENT	b14961847	Managing Projects: A Team-Based  Approach with Student CD	Brown, Karen; Hyer, Nancy
+MANAGEMENT	b11262502	Project Management	Larson, Erik
+MANAGEMENT	b9615802	Management	Daft, Richard L.
+MANAGEMENT	b10110371	Operations Management	Reid, R. Dan; Sanders, Nada R.
+MANAGEMENT	b28900661	Management	Rue, Leslie; Byars, Lloyd
+MANAGEMENT	b29795781	Strategic Management	Hitt, Michael A.; Hitt, Michael A.
+MANAGEMENT	b11428117	Operations Management:  Contemporary Concepts and Cases	Schroeder, Roger; Goldstein, Susan; Rungtusanatham, M. Johnny
+MANAGEMENT	b15683335	Organizational Behavior	Robbins, Stephen P.; Judge, Timothy A.
+MANAGEMENT	b10347241	Understanding Business	Nickels, William; McHugh, James; McHugh, Susan
+MANAGEMENT	b28901231	Employee Training & Development	Noe, Raymond A
+MANAGEMENT	b15491641	The Leadership Experience	Daft, Richard L.
+MANAGEMENT	b322743	Leadership: Enhancing the Lessons of Experience	Hughes, Richard; Ginnett, Robert; Curphy, Gordon
+MANAGEMENT	b15857339	Business Essentials	Ebert, Ronald J.; Griffin, Ricky W.
+MANAGEMENT	b16955963	MP Introduction to Management Science with Student CD and Crystal Ball passcode card	Hillier, Frederick; Hillier, Mark
+MANAGEMENT	b22136357	Small Business Management (Book Only)	Longenecker, Justin G.; Petty, J. William; Palich, Leslie E.; Moore, Carlos W.
+MANAGEMENT	b78375	Business and Society	Carroll, Archie B.; Buchholtz, Ann K.
+MANAGEMENT	b3668320	Management	Schermerhorn, John R.
+MANAGEMENT	b3915502	Principles of Management	Kreitner, Robert
+MANAGEMENT	b28901165	Human Relations in Organizations: Applications and Skill Building	Lussier, Robert N
+MARKETING	b11315083	Marketing Management	Clow, Kenneth E.; Baack, Donald E. (Edward)
+MARKETING	b9954518	International Marketing (with InfoTrac)	Czinkota, Michael R.; Ronkainen, Ilkka A.
+MARKETING	b9369595	Marketing	Solomon, Michael R.; Marshall, Greg W.; Stuart, Elnora W.
+MARKETING	b14733783	Marketing Express	Pride, William M.; Ferrell, O. C.
+MARKETING	b10352712	Essentials of Marketing	Perreault, Jr., William; Cannon, Joseph; McCarthy, E. Jerome
+MARKETING	b48256	Essentials of Contemporary Advertising	Arens, William; Schaefer, David; Weigold, Michael
+MARKETING	b418621	Services Marketing	Zeithaml, Valarie; Bitner, Mary Jo; Gremler, Dwayne
+MARKETING	b9950580	Retail Management	Berman, Barry; Evans, Joel R
+MARKETING	b11302083	Advertising and Public Relations Research	Jugenheimer, Donald W.; Bradley, Samuel D.; Kelley, Larry D.; Hudson, Jerry C.
+MARKETING	b9949418	Strategic Marketing Problems	Kerin, Roger; Peterson, Robert
+MARKETING	b15854495	Marketing Strategy	Ferrell, O. C.; Hartline, Michael
+MARKETING	b29796035	Marketing Strategy	Ferrell, O. C.; Ferrell, O. C.
+MARKETING	b9889491	Consumer Behavior	Schiffman, Leon; Kanuk, Leslie
+MARKETING	b11322522	Marketing for Entrepreneurs	Crane, Frederick G.
+MARKETING	b14337983	Foundations of Marketing	Pride, William M.; Ferrell, O. C.
+MARKETING	b9695921	Selling Today	Manning, Gerald L.; Reece, Barry L.; Ahearne, Michael L.
+MARKETING	b10155057	Marketing	Pride, William M.; Ferrell, O. C.
+MARKETING	b49861	Essentials of Marketing	Lamb, Charles W.; Hair, Joe F.; McDaniel, Carl
+MARKETING	b15557995	Marketing Metrics	Farris, Paul W.; Bendle, Neil T.; Pfeifer, Phillip E.; Reibstein, David J.
+NURSING	b9876919	Pharmacology for Nursing Care	Lehne, Richard A.
+NURSING	b15683139	Nutrition and Diet Therapy for Nurses	Tucker, Sheila
+NURSING	b9877771	Statistics and Data Analysis for Nursing Research	Polit Ph.D., FAAN, Denise F.
+NURSING	b15541387	Leadership and Management in Nursing	Grohar-Murray, Mary Ellen; DiCroce, Helen R.; Langan Ph.D., RN, Joanne C.
+NURSING	b9900026	Maternal and Child Health Nursing: Care of the Childbearing and Childrearing Family	Pillitteri, Adele
+NURSING	b11219158	Nurse's Pocket Guide	Doenges, Marilynn; Moorhouse, Mary; Murr, Alice
+NURSING	b11281076	Essentials of Nursing Leadership and Management	Whitehead, Diane; Weiss, Sally; Tappen, Ruth
+NURSING	b15082577	Basic Nursing	Potter, Patricia A.; Perry, Anne Griffin; Stockert, Patricia; Hall, Amy
+NURSING	b10502844	Nursing Care Plans	Doenges, Marilynn; Moorhouse, Mary; Murr, Alice
+NURSING	b14538641	Introduction To Nursing Research: Incorporating Evidence Based Practice	Boswell, Carol; Cannon, Sharon
+NURSING	b14732897	Psychiatric-Mental Health Nursing	Videbeck, Sheila L.
+NURSING	b11197929	Focus on Nursing Pharmacology	Karch, Amy M.
+NURSING	b15081899	Professional Nursing	Black, Beth; Chitty, Kay Kittrell
+NURSING	b10957079	Foundations of Nursing in the Community	Stanhope, Marcia; Lancaster, Jeanette
+NURSING	b10958918	Foundations of Psychiatric Mental Health Nursing	Varcarolis, Elizabeth M.; Halter, Margaret Jordan
+NURSING	b39169854	Essentials of Nursing Research: Appraising Evidence for Nursing Practice	Polit, Denise F.; Beck, Cheryl Tatano
+NURSING	b11193380	Lab Manual to Accompany Health Assessment in Nursing	Weber, Janet R.; Kelley, Jane H.
+NURSING	b10790262	Research Essentials	Norwood, Susan L.
+NURSING	b14731999	Psychiatric Mental Health Nursing	Frisch, Noreen Cavan; Frisch, Lawrence E.
+NURSING	b15079789	Math for Clinical Practice	Macklin, Denise; Chernecky, Cynthia C.; Infortuna, Mother Helena
+NURSING	b11578787	Nursing Diagnosis Manual	Doenges, Marilynn; Moorhouse, Mary; Murr, Alice
+NURSING	b10476443	Nurses' Handbook of Health Assessment	Weber, Janet R.
+NURSING	b15710251	Understanding The Work Of Nurse Theorists: A Creative Beginning	Sitzman, Kathleen; Wright Eichelberger, Lisa
+NURSING	b54587	Leadership Roles and Management Functions in Nursing	Marquis, Bessie L.; Huston, Carol J.
+SOCIOLOGY	b11355657	Issues and Ethics in the Helping Professions	Corey, Gerald; Corey, Marianne Schneider; Callanan, Patrick
+SOCIOLOGY	b14336745	Sociology	Ferrante, Joan
+SOCIOLOGY	b107043	Constructions of Deviance	Adler, Patricia A.; Adler, Peter
+SOCIOLOGY	b9876385	The Sociology Student Writer's Manual	Johnson Jr., William A.; Rettig, Richard P.; Scott, Greg M; Garrison, Stephen M.
+SOCIOLOGY	b78425	Criminology	Siegel, Larry J.
+SOCIOLOGY	b15683347	Cornerstone	Sherfield, Robert M.; Moody, Patricia G.
+SOCIOLOGY	b125412	An Introduction to Group Work Practice	Toseland, Ronald W.; Rivas, Robert F.
+SOCIOLOGY	b12438	Living Religions	Fisher, Mary Pat
+SOCIOLOGY	b16347071	The Sociology of Gender	Kramer, Laura
+SOCIOLOGY	b10420776	Choices in Relationships	Knox, David; Schacht, Caroline
+SOCIOLOGY	b2306572	Child, Family, and Community	Gonzalez-Mena, Janet
+SOCIOLOGY	b16316063	Life In Society	Henslin, James M.
+SOCIOLOGY	b9406209	Introduction to Family Processes	Day, Randal; Day, Randal D.
+SOCIOLOGY	b15857405	Racial and Ethnic Groups, Census Update	Schaefer, Richard T.
+SOCIOLOGY	b15539389	Family Therapy	Gladding, Samuel T.
+SOCIOLOGY	b14952271	Understanding Social Problems	Mooney, Linda A.; Knox, David; Schacht, Caroline
+SOCIOLOGY	b9372847	Sociology: A Brief Introduction	Schaefer, Richard T.
+SOCIOLOGY	b15129639	The Engaged Sociologist	Korgen, Kathleen O. (Odell); White, Jonathan M.
+SOCIOLOGY	b11356915	Sociology in Our Times	Kendall, Diana
+SOCIOLOGY	b10481159	Parenting	Holden, George W.
+SOCIOLOGY	b10418090	Solutions to Social Problems	Eitzen, D. Stanley
+SOCIOLOGY	b10473061	Introduction to Sociological Theory	Dillon, Michele
+SOCIOLOGY	b11068974	Human Behavior in the Social Environment	Rogers, Anissa
+SOCIOLOGY	b15857343	Sociology of Mental Disorder	Cockerham, William C.
+SOCIOLOGY	b11469385	Wadsworth Classic Readings in Sociology	Wadsworth
+SOCIOLOGY	b14496987	Global Communication	McPhail, Thomas L.
+SOCIOLOGY	b10417637	Social Psychology	Rohall, David E.; Milkie, Melissa A.; Lucas, Jeffrey W.
+SOCIOLOGY	b11429598	The Process of Parenting	Brooks, Jane B.
+SOCIOLOGY	b28901891	Social Inequality: Patterns and Processes	Marger, Martin
+SOCIOLOGY	b15683451	Essentials of Human Communication	DeVito, Joseph A.
+SOCIOLOGY	b11460887	Cengage Advantage Books: Introduction to Sociology	Tischler, Henry L.
+SOCIOLOGY	b12727949	Human Exceptionality	Hardman, Michael L.; Drew, Clifford J.; Egan, M. Winston
+SOCIOLOGY	b15683507	Social Gerontology	Hooyman, Nancy; Kiyak, H. Asuman
+SOCIOLOGY	b15063745	Aging and The Life Course: An Introduction to Social Gerontology	Quadagno, Jill
+SOCIOLOGY	b29796249	Human Exceptionality	Hardman, Michael L.; Hardman, Michael L.
+SOCIOLOGY	b15538685	Persuasion, Social Influence, and Compliance Gaining	Gass, Robert H.; Seiter, John S.
+SOCIOLOGY	b29795843	Introduction to Sociology (Cengage Advantage Books)	Tischler, Henry L.; Tischler, Henry L.
+SOCIOLOGY	b28901441	Human Communication	Pearson; Judy   Nelson; Paul   Titsworth; Scott   Harter; Lynn
+SOCIOLOGY	b28900941	Public and Private Families: An Introduction	Cherlin, Andrew J
+SOCIOLOGY	b11259873	Race, Class, and Gender in the United States	Rothenberg, Paula S.
+SOCIOLOGY	b14343681	Rereading America	Colombo, Gary; Cullen, Robert; Lisle, Bonnie
+SOCIOLOGY	b2852049	City Lights	Barbara Phillips, E.
+SOCIOLOGY	b3495792	Racist America	Feagin, Joe R.
+SOCIOLOGY	b9702531	Symbolic Interactionism	Charon, Joel M.
+SOCIOLOGY	b11089939	Self and Society	Hewitt, John P.; Shulman, David
+SOCIOLOGY	b11152483	The Social Factor	Azua, Maria
+SOCIOLOGY	b14483455	The Marriage-Go-Round	Cherlin, Andrew J.
+SOCIOLOGY	b9654756	Marriages and Families	Schwartz, Mary Ann A.; Scott, BarBara Marliene
+SOCIOLOGY	b10356467	Sociology	Schaefer, Richard T.
+SOCIOLOGY	b12730225	A Woman Doing Life	George, Erin; Johnson, Robert; Pollock, Joycelyn
+SOCIOLOGY	b15432351	Sociology Now	Kimmel, Michael S.; Aronson, Amy
+SOCIOLOGY	b11451729	The Dynamics of Family Policy	Butterfield, Alice K.; Rocha, Cynthia J.; Butterfield, William H.
+SOCIOLOGY	b14855903	Human Relations	Dalton, Marie; Hoyle, Dawn G; Watts, Marie W
+SOCIOLOGY	b14336475	Study Guide for Babbie's The Basics of Social Research	Babbie, Earl R.
+SOCIOLOGY	b9877695	Social Inequality	Hurst, Charles E.
+SOCIOLOGY	b19287779	Religions in Practice	Bowen, John R.
+SOCIOLOGY	b2711353	THINK Sociology	Carl, John D.
+SOCIOLOGY	b9624164	Child, Family, School, Community	Berns, Roberta M.
+SOCIOLOGY	b9631963	The Essence of Anthropology	Haviland, William A.; Prins, Harald E. L.; Walrath, Dana; McBride, Bunny
+SOCIOLOGY	b9851231	Dealing with Diversity	Adams, J. Q.; Strother-Adams, Pearlie
+SOCIOLOGY	b7070468	The Group in Society	Gastil, John W.
+SOCIOLOGY	b9333353	Sociology: The Core	Hughes, Michael; Kroehler, Carolyn
+SOCIOLOGY	b15021433	Urban Sociology	Flanagan, William
