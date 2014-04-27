@@ -19,9 +19,18 @@
 #
 #------------------------------------------------------------------------
 
-
-def main(dataSet):
-
+# Driver for program
+def main(dataFile):
+    n = 0
+    dataSet = list()
+    with open (dataFile, 'r') as f:
+        line = f.readline()
+        line = line.split('\t')
+        n = int(line[0].split('=')[1])
+        for line in f:
+            line = line.split('\t')
+            dataSet.append(line) 
+    assert n == len(dataSet), "The datafile is corrupt ("+str(n)+" != " + str(len(dataSet)) + ")"
     # Generate feature vectors for training and test sets
     # Each feature vector is a vector of (feature, answer) tuples
     titleLengths = getTitleLengths(dataSet)
@@ -53,17 +62,35 @@ def kfoldCV(algorithm, features, k):
 
     return (errors, mean, variance, k)
 
+# Trains a classifier, then runs it on the test data set
+def learnAndClassify(algorithm, trainingSet, testSet):
+    if algorithm == 'bayes':
+        classifier = trainNaiveBayes(trainingSet)
+    elif algorithm == 'neighbors':
+        classifier = trainKNeighbors(trainingSet)
 
+    error = classify(classifier, testSet)
+    return error
+ 
 # Divides data set into k partitions
 def partition(dataSet, k):
     return False #TODO
 
-
+# Gets number of characters in length of title for each entry in the dataset
 def getTitleLengths(dataSet):
-    return False #TODO
+    titles = list()
+    for entry in dataSet:
+        titles.append((len(entry[2].strip()), entry[0].strip()))
+    return titles
 
+# Gets the length of the longest word in the title for each entry in the dataset
 def getWordLengths(dataSet):
-    return False #TODO
+    wordLengths = list()
+    for entry in dataSet:
+        words = entry[2].split(" ")
+        words.sort(lambda x,y: -1*cmp(len(x), len(y)))
+        wordLengths.append(words)
+    return wordLengths
 
 # Takes a training set, returns a linear support vector classifier
 def trainLinearSVC(trainingSet):
@@ -82,15 +109,6 @@ def classify(classifier, dataSet):
     error = 0
     return error #TODO
 
-# Trains a classifier, then runs it on the test data set
-def learnAndClassify(algorithm, trainingSet, testSet):
-    if algorithm == 'bayes':
-        classifier = trainNaiveBayes(trainingSet)
-    elif algorithm == 'neighbors':
-        classifier = trainKNeighbors(trainingSet)
-
-    error = classify(classifier, testSet)
-    return error
-    
+   
 
 main('DataSet.txt')
