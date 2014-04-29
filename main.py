@@ -1,4 +1,7 @@
 from random import randint
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import LinearSVC
 #------------------------------------------------------------------------
 # main.py
 # 
@@ -22,7 +25,9 @@ from random import randint
 
 # Driver for program
 def main(dataFile):
+    # Read in file
     n = 0
+    genres = set()
     dataSet = list()
     with open (dataFile, 'r') as f:
         line = f.readline()
@@ -30,29 +35,44 @@ def main(dataFile):
         n = int(line[0].split('=')[1])
         for line in f:
             line = line.split('\t')
+            genres.add(line[0])
             dataSet.append(line) 
+    genres = list(genres)
+    # Replaces genres in data set with numbers, for easier classification
+    for entry in dataSet:
+        entry[0] = genres.index(entry[0])
+    
     assert n == len(dataSet), "The datafile is corrupt ("+str(n)+" != " + str(len(dataSet)) + ")"
     # Generate feature vectors for training and test sets
     # Each feature vector is a vector of (feature, answer) tuples
     titleLengths = getTitleLengths(dataSet)
     wordLengths = getWordLengths(dataSet)
- 
+    
     k = 10
+    kfoldCV('svc', titleLengths, k)
     kfoldCV('bayes', titleLengths, k)
+    kfoldCV('neighbors', titleLengths, k)
+    kfoldCV('svc', wordLengths, k)
     kfoldCV('bayes', wordLengths, k)
+    kfoldCV('neighbors', wordLengths, k)
 
 
 # Runs k-fold cross-validation on the data set, returning the list of success scores,
 # the mean, the variance and the k-value used
 def kfoldCV(algorithm, features, k):
     partitions = partition(features, k)
+    
     errors = list()
         
     # Run the algorithm k times, record error each time
     for i in range(k):
-        trainingSet = partitions[:k-1].extend(partitions[k+1:])
-        testSet = partitions[k]
-        
+        trainingSet = list()
+        for j in range(k):
+            if j != i:
+                trainingSet.append(partitions[j])
+        trainingSet = [item for entry in trainingSet for item in entry]
+        testSet = partitions[i]
+
         error = learnAndClassify(algorithm, trainingSet, testSet)
         
         errors.append(error)
@@ -60,23 +80,27 @@ def kfoldCV(algorithm, features, k):
     # Compute statistics
     mean = sum(errors)/k
     variance = sum([(error - mean)**2 for error in errors])/(k-1) 
-
+    print("Using " +  algorithm + "\n\tMean = " + str(mean) + "\n\tVariance = " + str(variance)) 
     return (errors, mean, variance, k)
 
 # Trains a classifier, then runs it on the test data set
 def learnAndClassify(algorithm, trainingSet, testSet):
     if algorithm == 'bayes':
-        classifier = trainNaiveBayes(trainingSet)
+        classifier = MultinomialNB()
     elif algorithm == 'neighbors':
-        classifier = trainKNeighbors(trainingSet)
+        classifier = KNeighborsClassifier(n_neighbors=4)
+    elif algorithm == 'svc':
+        classifier = LinearSVC(dual=False) 
 
+    classifier = train(classifier, trainingSet)    
     error = classify(classifier, testSet)
+
     return error
- 
+
+
 # Divides data set into k partitions
 def partition(dataSet, k):
     size = len(dataSet)//k
-    print(size)
     partitions = [[] for i in range(k)]
     j = 0
     
@@ -84,9 +108,8 @@ def partition(dataSet, k):
         x = assign(partitions, k, size) #TODO: Not sure this assignation method is good
         partitions[x].append(entry)
 
-    for partition in partitions:
-        print len(partition)
     return partitions
+
 
 # Assigns each entry to a non-full partition
 def assign(partitions, k, size):
@@ -100,7 +123,7 @@ def assign(partitions, k, size):
 def getTitleLengths(dataSet):
     titles = list()
     for entry in dataSet:
-        titles.append((len(entry[2].strip()), entry[0].strip()))
+        titles.append((len(entry[2].strip()), entry[0]))
     return titles
 
 # Gets the length of the longest word in the title for each entry in the dataset
@@ -109,26 +132,22 @@ def getWordLengths(dataSet):
     for entry in dataSet:
         words = entry[2].split(" ")
         words.sort(lambda x,y: -1*cmp(len(x), len(y)))
-        wordLengths.append(words)
+        wordLengths.append((len(words[0]), entry[0]))
+
     return wordLengths
 
-# Takes a training set, returns a linear support vector classifier
-def trainLinearSVC(trainingSet):
-    return False
-
-# Takes a training set, returns a naive bayes classifier
-def trainNaiveBayes(trainingSet):
-    return False #TODO
-
-# Takes a training set, returns a k nearest neighbors classifier
-def trainKNeighbors(trainingSet):
-    return False #TODO
+# trains a model
+def train(classifier, trainingSet):
+    X = [[entry[0]] for entry in trainingSet]
+    y = [entry[1] for entry in trainingSet]
+    
+    return classifier.fit(X,y)
 
 # Runs a classifier on the input, outputs the success rate
 def classify(classifier, dataSet):
-    error = 0
-    return error #TODO
+    X = [[entry[0]] for entry in dataSet]
+    y = [entry[1] for entry in dataSet]
 
-   
+    return classifier.score(X,y)
 
 main('DataSet.txt')
