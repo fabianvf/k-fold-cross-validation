@@ -49,17 +49,28 @@ def main(dataFile):
     wordLengths = getWordLengths(dataSet)
     
     k = 10
-    kfoldCV('svc', titleLengths, k)
-    kfoldCV('bayes', titleLengths, k)
-    kfoldCV('neighbors', titleLengths, k)
-    kfoldCV('svc', wordLengths, k)
-    kfoldCV('bayes', wordLengths, k)
-    kfoldCV('neighbors', wordLengths, k)
+    print("Using SVC with:")
+    print("\tlength of title:")
+    kfoldCV(LinearSVC(dual=False), titleLengths, k)
+    print("\tlength of longest word in title:")
+    kfoldCV(LinearSVC(dual=False), wordLengths, k)
+    
+    print("Using Naive Bayes with:")
+    print("\tlength of title:")
+    kfoldCV(MultinomialNB(), titleLengths, k)
+    print("\tlength of longest word in title:")
+    kfoldCV(MultinomialNB(), wordLengths, k)
+
+    print("Using K-Nearest Neighbors with:")
+    print("\tlength of title:")
+    kfoldCV(KNeighborsClassifier(n_neighbors=4), titleLengths, k)
+    print("\tlength of longest word in title:")
+    kfoldCV(KNeighborsClassifier(n_neighbors=4), wordLengths, k)
 
 
-# Runs k-fold cross-validation on the data set, returning the list of success scores,
-# the mean, the variance and the k-value used
-def kfoldCV(algorithm, features, k):
+# Takes a classifier and k value, runs k-fold cross-validation on the data set, 
+# returns the list of success scores, the mean, the variance and the k-value used
+def kfoldCV(classifier, features, k):
     partitions = partition(features, k)
     
     errors = list()
@@ -73,24 +84,18 @@ def kfoldCV(algorithm, features, k):
         trainingSet = [item for entry in trainingSet for item in entry]
         testSet = partitions[i]
 
-        error = learnAndClassify(algorithm, trainingSet, testSet)
+        error = learnAndClassify(classifier, trainingSet, testSet)
         
         errors.append(error)
         
     # Compute statistics
     mean = sum(errors)/k
-    variance = sum([(error - mean)**2 for error in errors])/(k-1) 
-    print("Using " +  algorithm + "\n\tMean = " + str(mean) + "\n\tVariance = " + str(variance)) 
+    variance = sum([(error - mean)**2 for error in errors])/(k) 
+    print("\t\tMean = " + str(mean) + "\n\t\tVariance = " + str(variance)+"\n") 
     return (errors, mean, variance, k)
 
 # Trains a classifier, then runs it on the test data set
-def learnAndClassify(algorithm, trainingSet, testSet):
-    if algorithm == 'bayes':
-        classifier = MultinomialNB()
-    elif algorithm == 'neighbors':
-        classifier = KNeighborsClassifier(n_neighbors=4)
-    elif algorithm == 'svc':
-        classifier = LinearSVC(dual=False) 
+def learnAndClassify(classifier, trainingSet, testSet):
 
     classifier = train(classifier, trainingSet)    
     error = classify(classifier, testSet)
