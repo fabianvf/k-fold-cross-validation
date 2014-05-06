@@ -1,4 +1,4 @@
-from random import randint
+import random
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import LinearSVC
@@ -6,6 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import math
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
+import sys
 
 #------------------------------------------------------------------------
 # main.py
@@ -52,33 +53,37 @@ def main(dataFile):
 
     
     features = extractFeatures(dataSet)
-
-    k = 10
-    _output("Using SVC:")
-    kfoldCV(LinearSVC(dual=False), features[0], k)
+    mySeed = random.randint(0, sys.maxint)
     
-    _output("Using Naive Bayes:")
-    kfoldCV(MultinomialNB(), features[0], k)
-
-    _output("Using K-Nearest Neighbors:")
-    kfoldCV(KNeighborsClassifier(n_neighbors=4), features[0], k)
-
     k = 10
-    _output("Using SVC:")
-    kfoldCV(LinearSVC(dual=False), features[1], k)
+    _output("Using feature vector of descriptive measures:")
+#    _output("\tUsing SVC:")
+#    kfoldCV(LinearSVC(dual=False), features[0], k, seed=mySeed)
     
-    _output("Using Naive Bayes:")
-    kfoldCV(MultinomialNB(), features[1], k)
+    _output("\tUsing Naive Bayes:")
+    kfoldCV(MultinomialNB(), features[0], k, seed=mySeed)
 
-    _output("Using K-Nearest Neighbors:")
-    kfoldCV(KNeighborsClassifier(n_neighbors=4), features[1], k)
+    _output("\tUsing K-Nearest Neighbors:")
+    kfoldCV(KNeighborsClassifier(n_neighbors=4), features[0], k, seed=mySeed)
+    
+    k = 10 
+    _output("\nUsing feature vector of words in title:")
+ #   _output("\tUsing SVC:")
+ #   kfoldCV(LinearSVC(dual=False), features[1], k, seed=mySeed)
+        
+    _output("\tUsing Naive Bayes:")
+    kfoldCV(MultinomialNB(), features[1], k, seed=mySeed)
 
+    _output("\tUsing K-Nearest Neighbors:")
+    kfoldCV(KNeighborsClassifier(metric='jaccard'), features[1], k, seed=mySeed)
+    
 
 # Takes a classifier, feature vector and k value, runs k-fold cross-validation on the data set, 
-# returns the list of success scores, the mean, the variance and the k-value used
+#     returns the list of success scores, mean, variance, confidence interval, and the k-value used
 # Feature vector should be of the form {X1, C1} where X is a vector of feature values and C1 is the target value
-def kfoldCV(classifier, features, k):
-    partitions = partition(features, k)
+# Optional parameter seed allows you to force partitioning to be the same across multiple runs
+def kfoldCV(classifier, features, k, seed=None):
+    partitions = partition(features, k, seed)
     errors = list()
         
     # Run the algorithm k times, record error each time
@@ -100,13 +105,12 @@ def kfoldCV(classifier, features, k):
     mean = sum(errors)/k
     variance = sum([(error - mean)**2 for error in errors])/(k)
     standardDeviation = variance**.5
+    confidenceInterval = (mean - 1.96*standardDeviation, mean + 1.96*standardDeviation)
  
-    _output("\tMean = {0:.2f} \n\tVariance = {1:.2f} \n\tStandard Devation = {2:.2f} \n\tError values: ".format(mean, variance, standardDeviation))
+    _output("\t\tMean = {0:.2f} \n\t\tVariance = {1:.4f} \n\t\tStandard Devation = {2:.3f} \n\t\t95% Confidence interval: [{3:.2f}, {4:.2f}]"\
+            .format(mean, variance, standardDeviation, confidenceInterval[0], confidenceInterval[1]))
 
-    for i in range(len(errors)):
-        _output("\t\tRun " + str(i+1)+ ": {0:.2f}".format(errors[i]))
-
-    return (errors, mean, variance, k)
+    return (errors, mean, variance, confidenceInterval, k)
 
 # trains a model
 def train(classifier, trainingSet):
@@ -122,26 +126,28 @@ def classify(classifier, dataSet):
     return classifier.score(X,y)
 
 # Divides data set into k partitions
-def partition(dataSet, k):
+def partition(dataSet, k, seed=None):
     size = math.ceil(len(dataSet)/float(k))
     partitions = [[] for i in range(k)]
     j = 0
     
     for entry in dataSet:
-        x = assign(partitions, k, size) 
+        x = assign(partitions, k, size, seed) 
         partitions[x].append(entry)
 
     return partitions
 
 
 # Assigns each entry to a non-full partition
-def assign(partitions, k, size):
-    x = randint(0,k-1)
+def assign(partitions, k, size, seed=None):
+    if seed is not None:
+        random.Random(seed)
+    x = random.randint(0,k-1)
     while(len(partitions[x]) >= size):
-        x = randint(0,k-1)
+        x = random.randint(0,k-1)
     return x
 
-# Extracts two feature sets, one quantitative and stupid, the other qualitative and a little smarter
+# Extracts two feature sets, one with descriptive statistics, the other a vector of the words in the title
 def extractFeatures(dataSet):
     vector1, vector2 = list(), list()
     
@@ -149,26 +155,26 @@ def extractFeatures(dataSet):
     # Produces list of all unique word stems in the titles in the dataset
     wordBag = list({stemmer.stem(word) for entry in dataSet for word in entry[2].strip().split(" ") if not word in stopwords.words('english')})
 
+
     for entry in dataSet:
         genre, isbn, title, authors = entry[0], entry[1].strip(), entry[2].strip(), entry[3].strip()
 
-        wordList, authorList = title.split(" "), authors.split(";")
+        wordList, authorList = [word for word in title.split(" ")], [author.strip() for author in authors.split(";")]
         sortedWords = sorted(wordList, key = lambda x: -1*len(x))
-        stemmedWords = [stemmer.stem(word) for word in sortedWords if not word in stopwords.words('english')]
+        nonStopWords = [word for word in sortedWords if not word in stopwords.words('english')]
+        stemmedWords = [stemmer.stem(word) for word in nonStopWords]
 
         # Quantitative data about the title
-        shortestWord = len(sortedWords[-1])
-        longestWord = len(sortedWords[0])
-        medianWord = len(sortedWords[int(math.ceil(len(sortedWords)/2))])
-        meanWord = sum([len(word) for word in sortedWords])/len(sortedWords)
-        wordSD = sum([(len(word)-meanWord)**2 for word in sortedWords])**.5
+        shortestWord = len(nonStopWords[-1])
+        longestWord = len(nonStopWords[0])
+        meanWord = sum([len(word) for word in nonStopWords])/len(nonStopWords)
+        wordSD = (sum([(len(word)-meanWord)**2 for word in nonStopWords])/len(nonStopWords))**.5
 
-        vector1.append([(len(title), len(isbn), len(authorList), len(wordList), shortestWord, longestWord, medianWord, meanWord, wordSD), genre])
+        vector1.append([(len(authorList), len(wordList), longestWord, shortestWord, meanWord, wordSD), genre])
         
-        # gets stems in current title, checks how many of the total words are represented in the title
-        littleWordBag = [stemmer.stem(word) for word in wordList if not word in stopwords.words('english')]
-        occurrences = tuple(1 if word in littleWordBag else 0 for word in wordBag)
-
+        # Creates a vector storing whether a word in a dataset occurred in the title
+        occurrences = tuple(1 if word in stemmedWords else 0 for word in wordBag)
+        
         vector2.append([occurrences, genre])
 
     return (vector1,vector2)
